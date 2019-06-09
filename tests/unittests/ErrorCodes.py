@@ -17,7 +17,7 @@ from storyscript.ErrorCodes import ErrorCodes
     ('function_misspell', ('E0008', 'Misspelt `function`')),
     ('import_misspell', ('E0009', 'Misspelt `import`')),
     ('import_misspell_as', ('E0010',
-                            'Misspelt `as` in an import statement'')),
+                            'Misspelt `as` in an import statement')),
     ('import_unquoted_file', ('E0011',
                               'The imported filename must be in quotes')),
     ('string_opening_quote', ('E0012', 'Missing opening quote for string')),
