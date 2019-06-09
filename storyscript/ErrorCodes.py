@@ -6,15 +6,15 @@ class ErrorCodes:
     unidentified_error = ('E0001', '')
     service_name = ('E0002', "A service name can't contain `.`")
     arguments_noservice = ('E0003',
-                           'You have defined an argument, but not a service')
+                           'Unefined argument; not a service')
     return_outside = ('E0004', '`return` is allowed only inside functions')
     variables_backslash = ('E0005', "A variable name can't contain `/`")
     variables_dash = ('E0006', "A variable name can't contain `-`")
     assignment_incomplete = ('E0007', 'Missing value after `=`')
-    function_misspell = ('E0008', 'You have misspelt `function`')
-    import_misspell = ('E0009', 'You have misspelt `import`')
+    function_misspell = ('E0008', 'Misspelt `function`')
+    import_misspell = ('E0009', 'Misspelt `import`')
     import_misspell_as = ('E0010',
-                          'You have misspelt `as` in an import statement')
+                          'Misspelt `as` in an import statement')
     import_unquoted_file = ('E0011', 'The imported filename must be in quotes')
     string_opening_quote = ('E0012', 'Missing opening quote for string')
     string_closing_quote = ('E0013', 'Missing closing quote for string')
@@ -29,7 +29,7 @@ class ErrorCodes:
                                '`{keyword}` is reserved for future use')
     arguments_nomutation = (
         'E0039',
-        'You have defined a chained mutation, but not a mutation')
+        'Defined chained mutation, but not a mutation')
     compiler_error_no_operator = (
         'E0040', 'Invalid operator `{operator}` provided.')
     invalid_character = ('E0041', '`{character}` is not allowed here')
@@ -89,11 +89,11 @@ class ErrorCodes:
         'E0069',
         'Time value duplication: `{time_type}` must only occur once')
     string_templates_unclosed = (
-        'E0070', 'Unclosed string template. Did you forget a `}}`?')
+        'E0070', 'Unclosed string template. Missing: `}}`')
     string_templates_unopened = (
         'E0071',
-        ('Unopened string template. Did you forget a `{{` or '
-         'wanted to escape with `\\}}`?'))
+        ('Unopened string template. Missing `{{` or '
+         'escape character `\\}}`'))
     object_destructoring_invalid_path = (
         'E0072', 'Objects can only be destructored into variable names.')
     object_destructoring_no_variables = (
@@ -106,7 +106,7 @@ class ErrorCodes:
         'E0076',
         'Unexpected end of line. Maybe close a `}}` or `]` expression?')
     indentation_error = (
-        'E0077', 'Invalid indentation detected. Did you mix tabs and spaces?')
+        'E0077', 'Invalid indentation detected. Inconsistent tabs and spaces')
     invalid_preview_flag = (
         'E0078',
         'Invalid preview flag. `{flag}` is not a valid preview feature.')
@@ -144,7 +144,7 @@ class ErrorCodes:
         'E0109', "Inline service calls can't define an output")
     function_without_output_return = (
         'E0110',
-        ('`return` expected. Did you miss to add `returns {return_type}`?'))
+        ('`return` expected. Missing `returns {return_type}`'))
     function_redeclaration = (
         'E0111', 'Function `{name}` has already been declared')
     function_not_found = (
