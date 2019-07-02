@@ -106,7 +106,7 @@ class ErrorCodes:
         'E0076',
         'Unexpected end of line. Maybe close a `}}` or `]` expression?')
     indentation_error = (
-        'E0077', 'Invalid indentation detected. Inconsistent tabs and spaces')
+        'E0077', 'Invalid indentation detected. Maybe inconsistent tabs and spaces?')
     invalid_preview_flag = (
         'E0078',
         'Invalid preview flag. `{flag}` is not a valid preview feature.')
