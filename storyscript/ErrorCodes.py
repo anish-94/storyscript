@@ -29,7 +29,7 @@ class ErrorCodes:
                                '`{keyword}` is reserved for future use')
     arguments_nomutation = (
         'E0039',
-        'Defined chained mutation, but not a mutation')
+        'Chained mutation was defined without a mutation')
     compiler_error_no_operator = (
         'E0040', 'Invalid operator `{operator}` provided.')
     invalid_character = ('E0041', '`{character}` is not allowed here')
